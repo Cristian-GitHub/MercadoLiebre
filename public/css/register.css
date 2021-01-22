@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.mainh2{
+    font-size: 6vw;
+    padding-left: 0px;
+    text-align: left;
+}
+.mainh3{
+    font-size: 4vw;
+}
+.main-header{
+    display: flex;
+    direction: column;
+}
+.header-espacio{
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+}
+.header-fijo-register{
+    background-color: #EAC926;
+    position: fixed;
+    top:0px;
+    z-index: 1;
+    width: 100%;
+}
+.inicio-formulario{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.formulario-de-registro{
+    width: 100%;
+    margin-top: 5px;
+    max-width: 500px;
+    background-color: rgb(228, 228, 228);
+    padding: 20px;
+    text-align: left;
+    padding-left: 35px;
+}
+
+.radius{
+    display: flex;
+    width: 100%;
+    font-size: 3vw;
+}
+.comprador, .vendedor{
+    width: 50%;
+    font-size: 3vw;
+}
+
+.intereses{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    font-size: 3vw;
+}
+.botonfile{
+    width: 100%;
+    font-size: 3vw;
+}
+.inputs{
+    width: 100%;
+    font-size: 3vw;
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+.botones-enviar-borrar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    margin-top: 10px;
+}
+.boton-enviar, .boton-borrar-datos{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px 0px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+}
+
+@media (min-width: 361px){
+    .header-espacio{
+        height: 70px;
+    }
+        .inputs{
+        width: 95%;
+    }
+    .mainh2{
+        font-size: 3vw;
+    }
+    .mainh3{
+        font-size: 2vw;
+    }
+    .inputs{
+        font-size: 1.5vw;
+    }
+    .intereses{
+        font-size: 1.5vw;
+    }
+    .comprador, .vendedor{
+        font-size: 1.5vw;
+    }
+    .botonfile{
+        font-size: 1.5vw;
+    }
+    .boton-enviar, .boton-borrar-datos{
+        width: 30%;
+        margin: 10px;
+    }
+    .boton-borrar-datos{
+        margin-right: 0px;
+    }
+}
+@media (min-width: 769px){
+    .header-espacio{
+        height: 77px;
+    }
+}

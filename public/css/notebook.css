@@ -1,0 +1,90 @@
+/*=======================================*/
+        /* NAVEGACIÓN EN DESCKTOP */
+/*=======================================*/
+
+@media (min-width: 769px){
+
+    /*=======================================*/
+                  /* HEADER */
+    /*=======================================*/
+
+    .header-top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .s-imagen-header{
+        padding-top: 90px;
+    }
+    .inputlupa{
+        font-size: 1.3vw;
+    }
+
+    .header-logo-de-mano{
+        padding: 5px;
+        margin-right: 10px;
+        text-align: right;
+        font-weight: bolder;
+    }
+
+    /*=======================================*/
+                    /* MAIN */
+    /*=======================================*/
+
+    .seccion-login{
+        display: flex;
+        flex-direction: column;
+    }
+    .div-login{
+        margin-top: 0px;
+    }
+    .detalle-articulo{
+        display: flex;
+        position: relative;
+    }
+    .articulos{
+        width: 22%;
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        transition: all 300ms;
+    }
+
+
+/*=======================================*/
+               /* FOOTER */
+/*=======================================*/
+
+    .footer-fas-fa {
+        color: blue;
+        font-size: 2vw;
+        transition: all 500ms;
+    }
+    .footer-fas-fa i:hover{
+        color:indigo;
+    }
+
+    .footerh2{
+        font-size: 1.5vw;
+        font-weight: bold;
+    }
+    .footerp{
+        font-size: 1vw;
+        padding-top: 5px;
+    }
+    .seccion-footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+
+    }
+    .art-footer{
+        width: 33%;
+        padding: 5px;   
+    }
+    .copyright{
+        display: flex;
+        margin-top: 20px;
+    }
+}

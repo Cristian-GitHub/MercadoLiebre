@@ -13,40 +13,55 @@
     <link rel="stylesheet" href="​https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css​">
 </head>
 <body>
-    <header class="main-header">            
-        <div class="header-espacio"></div>
-        <section class="header-fijo-login">
-        <div class="header-top">
-            <div class="logo-y-busqueda">
-                <div class="divlogo">
-                    <figure class="logo-liebre"><img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre"></figure>
+    <header class="main-header">
+        <section class="headerfijo">
+            <div class="header-top">
+                <div class="logo-y-busqueda">
+                    <div class="divlogo">
+                        <figure class="logo-liebre"><img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre"></figure>
+                    </div>
+                    <div class="divlupaybarra">
+                        <input type="text" name="barra-busqueda" placeholder="Buscar productos, marcas" class="inputlupa">
+                        <a class="lupa" href="#"><i class="fas fa-search"></i></a>
+                    </div>
                 </div>
-                <div class="divlupaybarra">
-                    <input type="text" name="barra-busqueda" placeholder="Buscar productos, marcas" class="inputlupa">
-                    <a class="lupa" href="#"><i class="fas fa-search"></i></a>
-                </div>
+                <p class="header-logo-de-mano"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
-            <p class="header-logo-de-mano"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
-        </div>
-        <nav class="menu-tyd">
-            <ul class="navbar-izq">
-                <li type="none"><a href="/">Ofertas</a></li>
-                <li type="none"><a href="#">Tiendas Oficiales</a></li>
-                <li type="none"><a href="#">Vender</a></li>
-                <li type="none"><a href="#">Ayuda</a></li>
-            </ul>
-            <ul class="navbar-der">
-                <li  type="none" class = "logo-card">Creá tu cuenta <a href="/register"><i class="far fa-id-card"></i></a></li>
-                <li  type="none" id="login">Ingresá <a href="/login"><i class="fas fa-sign-in-alt"></i></a></li>
-                <li  type="none">Mis compras <a href="#"><i class="fas fa-shopping-basket"></i></a></li>
-            </ul>
-        </nav>
-        <div id="burger-menu"><i class="fa fa-bars burger"></i></div>
-    </section>
+            <nav class="menu-tyd">
+                <ul class="navbar-izq">
+                    <li type="none"><a href="/">Ofertas</a></li>
+                    <li type="none"><a href="#">Tiendas Oficiales</a></li>
+                    <li type="none"><a href="#">Vender</a></li>
+                    <li type="none"><a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="navbar-der">
+                    <li  type="none" class = "logo-card">Creá tu cuenta <a href="/register"><i class="far fa-id-card"></i></a></li>
+                    <li  type="none" id="login">Ingresá <a href="/login"><i class="fas fa-sign-in-alt"></i></a></li>
+                    <li  type="none">Mis compras<a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </nav>
+            <nav class="barra-burguer">
+                <div class="contenedor-btn-burguer">
+                    <div id="btn-burguer">
+                        <i class="fa fa-bars burger"></i>
+                    </div>
+                </div>
+                <div class="lista-desplegable-burguer">
+                    <ul class="navbar-lista-burguer">
+                        <li type="none"><a href="/">Ofertas</a></li>
+                        <li type="none"><a href="#">Tiendas Oficiales</a></li>
+                        <li type="none"><a href="#">Vender</a></li>
+                        <li type="none"><a href="#">Ayuda</a></li>               
+                        <li type="none"><a href="/register">Creá tu cuenta</a></li>               
+                        <li type="none"><a href="/login">Ingresá</a></li>               
+                        <li type="none"><a href="#">Mis compras</a></li>               
+                    </ul>   
+                </div>
+            </nav>
+
     </header>
     <main>
         <section class="seccion-login">
-
             <div class="div-login">
                 <form action="/ingresar" method="POST" class="formulario-login">
                     <div class="nombre-usuario">

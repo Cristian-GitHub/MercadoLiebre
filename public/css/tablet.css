@@ -7,7 +7,7 @@
     /*=======================================*/
                     /* HEADER */
     /*=======================================*/
-    #burger-menu{
+    .barra-burguer{
         display: none;
     }
     .header-top{
@@ -80,6 +80,9 @@
     .navbar-der li{
         align-content: space-around;
         margin: 0px 10px;
+    }
+    .s-imagen-header{
+        margin-top: 10px;
     }
 
     /*=======================================*/

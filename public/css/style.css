@@ -33,7 +33,7 @@ main{
     width: 100%;
 }
 .s-imagen-header{
-    padding-top: 130px;
+    padding-top: 10px;
 }
 .header-top{
     padding: 10px;
@@ -84,21 +84,61 @@ main{
 .menu-tyd{
     display:none;
 }
-#burger-menu{
-    background-color:#03264C;
-    margin: auto;
-    width: 20px;
-    border-radius: 3px;
-    text-align: center;
+/*=======================================*/
+          /* MENÚ HAMBURGUESA */
+/*=======================================*/
+
+.barra-burguer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor-btn-burguer{
+    background-color: blue;
     color: white;
-    margin-bottom: 10px;
+    border-radius: 3px;
+    padding: 2px 3px;
+    margin-bottom: 3px;
+}
+.lista-desplegable-burguer{
+    display: none;
+    width: 100%;
+}
+.contenedor-btn-burguer:hover + .lista-desplegable-burguer{
+    display: block;
+}
+.lista-desplegable-burguer:hover{
+    display: block;
+}
+.navbar-lista-burguer{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.navbar-lista-burguer li{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 3px;
+    border-radius: 3px;
+}
+.navbar-lista-burguer li a{
+    color:white;
+    text-decoration: none;
+    font-size: 4vw;
+}
+.navbar-lista-burguer li:hover{
+    background-color: rgb(78, 78, 42);
+    color: white;
+    text-decoration-color: teal;
 }
 
 .s-imagen-header{
-    display:flex;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    display: flex;
+    padding: 0px;
     width: 100%;
+    margin-top: 110px;
 }
 
 /*=======================================*/

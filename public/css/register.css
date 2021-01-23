@@ -27,6 +27,9 @@
     z-index: 1;
     width: 100%;
 }
+.seccion-formulario{
+    margin-top: 100px;
+}
 .inicio-formulario{
     width: 100%;
     display: flex;
@@ -40,10 +43,10 @@
     max-width: 500px;
     background-color: rgb(228, 228, 228);
     padding: 20px;
+    padding-right: 25px;
     text-align: left;
     padding-left: 35px;
 }
-
 .radius{
     display: flex;
     width: 100%;
@@ -93,10 +96,10 @@
 }
 
 @media (min-width: 361px){
-    .header-espacio{
-        height: 70px;
+    .seccion-formulario{
+        margin-top: 60px;
     }
-        .inputs{
+    .inputs{
         width: 95%;
     }
     .mainh2{
@@ -126,7 +129,7 @@
     }
 }
 @media (min-width: 769px){
-    .header-espacio{
-        height: 77px;
+    .seccion-formulario{
+        margin-top: 90px;
     }
 }

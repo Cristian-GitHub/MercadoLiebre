@@ -25,6 +25,9 @@
         text-align: right;
         font-weight: bolder;
     }
+    .s-imagen-header{
+        margin-top: 0px;
+    }
 
     /*=======================================*/
                     /* MAIN */

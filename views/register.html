@@ -14,8 +14,7 @@
 </head>
 <body>
     <header class="main-header">
-        <div class="header-espacio"></div>
-        <section class="header-fijo-register">
+        <section class="headerfijo">
             <div class="header-top">
                 <div class="logo-y-busqueda">
                     <div class="divlogo">
@@ -38,11 +37,27 @@
                 <ul class="navbar-der">
                     <li  type="none" class = "logo-card">Creá tu cuenta <a href="/register"><i class="far fa-id-card"></i></a></li>
                     <li  type="none" id="login">Ingresá <a href="/login"><i class="fas fa-sign-in-alt"></i></a></li>
-                    <li  type="none">Mis compras <a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                    <li  type="none">Mis compras<a href="#"><i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
             </nav>
-            <div id="burger-menu"><i class="fa fa-bars burger"></i></div>
-        </section>
+            <nav class="barra-burguer">
+                <div class="contenedor-btn-burguer">
+                    <div id="btn-burguer">
+                        <i class="fa fa-bars burger"></i>
+                    </div>
+                </div>
+                <div class="lista-desplegable-burguer">
+                    <ul class="navbar-lista-burguer">
+                        <li type="none"><a href="/">Ofertas</a></li>
+                        <li type="none"><a href="#">Tiendas Oficiales</a></li>
+                        <li type="none"><a href="#">Vender</a></li>
+                        <li type="none"><a href="#">Ayuda</a></li>               
+                        <li type="none"><a href="/register">Creá tu cuenta</a></li>               
+                        <li type="none"><a href="/login">Ingresá</a></li>               
+                        <li type="none"><a href="#">Mis compras</a></li>               
+                    </ul>   
+                </div>
+            </nav>
     </header>
     <main>
         <section class="seccion-formulario">        

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MercadoLiebre</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/tablet.css">
     <link rel="stylesheet" href="../css/notebook.css">
@@ -66,8 +66,8 @@
                 <div class=formulario-de-registro>
                     <h2 class="mainh2">Formulario de Registro</h2>
                     <br>
-                    <input class ="inputs" type="text" name="nombreYapellido" placeholder="Nombre y apellido" required>
-                    <input class ="inputs" type="text" name="nombreDeUsuario" placeholder="Nombre de usuario" required>
+                    <input class ="inputs" type="text" name="nombreYapellido" placeholder="Nombre y apellido" required pattern="[a-zA-Z]+">
+                    <input class ="inputs" type="text" name="nombreDeUsuario" placeholder="Nombre de usuario" required pattern="[a-zA-Z]+">
                     <input class ="inputs" type="email" name="email" placeholder="email" required>
                     <br><br>
                     <h3 class="mainh3">Fecha de Nacimiento</h3>
@@ -114,8 +114,8 @@
                         <div class="boton-foto-perfil"><input type="file" name="fotoperfil" value="" accept="jpg gif jpeg png" class="botonfile"></div>
                     </div>
                     <br><h3 class="mainh3">Contraseña</h3><br>
-                    <input class ="inputs" type="password" name="pass" placeholder="Ingrese contraseña" required>
-                    <input class ="inputs" type="password" name="pass" placeholder="Repetir contraseña" required>
+                    <input minlength="4" class ="inputs" type="password" name="pass" placeholder="Ingrese contraseña" required >
+                    <input minlength="4" class ="inputs" type="password" name="pass" placeholder="Repetir contraseña" required>
                     <div class="botones-enviar-borrar">
                         <button class="boton-enviar" type="submit">Enviar</button>
                         <button class="boton-borrar-datos" type="reset">Borrar Datos</button>

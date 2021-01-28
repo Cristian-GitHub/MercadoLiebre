@@ -24,7 +24,7 @@
     }
     .logo-y-busqueda{
         display: flex;
-        direction: row;
+        flex-direction: row;
         align-items: center;
         width: 60%;
     }

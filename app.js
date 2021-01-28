@@ -6,8 +6,10 @@ const publicpath = path.resolve (__dirname,'./public'); //resuelvo como variable
 
 app.use (express.static(publicpath)); //hacemos estática la ruta del directorio public, para que luego el HTML la encuentre facil
 
-app.listen (3000, function(){
-    console.log("SERVIDOR OK POR EL PUERTO 3000")
+app.set ('puerto', process.env.PORT || 3000);
+
+app.listen (app.get ('puerto'), function(){
+    console.log ("LEVANTÓ EL SERVIDOR");
 });
 
 app.get ('/', function (req,res){

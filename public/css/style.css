@@ -41,7 +41,7 @@ main{
 }
 .logo-y-busqueda{
     display: flex;
-    direction: row;
+    flex-direction: row;
     align-items: center;
 }
 .divlogo{
@@ -99,13 +99,16 @@ main{
     border-radius: 3px;
     padding: 2px 3px;
     margin-bottom: 3px;
-}
+ }
 .lista-desplegable-burguer{
     display: none;
     width: 100%;
 }
 .contenedor-btn-burguer:hover + .lista-desplegable-burguer{
     display: block;
+}
+.contenedor-btn-burguer:hover + .navbar-lista-burguer{
+    animation: animacion 2s 1 normal;
 }
 .lista-desplegable-burguer:hover{
     display: block;
@@ -132,6 +135,14 @@ main{
     background-color: rgb(78, 78, 42);
     color: white;
     text-decoration-color: teal;
+}
+@keyframes animacion{
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 .s-imagen-header{

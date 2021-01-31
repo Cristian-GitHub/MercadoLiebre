@@ -107,9 +107,7 @@ main{
 .contenedor-btn-burguer:hover + .lista-desplegable-burguer{
     display: block;
 }
-.contenedor-btn-burguer:hover + .navbar-lista-burguer{
-    animation: animacion 2s 1 normal;
-}
+
 .lista-desplegable-burguer:hover{
     display: block;
 }
@@ -136,15 +134,6 @@ main{
     color: white;
     text-decoration-color: teal;
 }
-@keyframes animacion{
-    0%{
-        transform: translateY(-100px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-}
-
 .s-imagen-header{
     display: flex;
     padding: 0px;
@@ -241,6 +230,7 @@ h2{
 /*=======================================*/
                /* FOOTER */
 /*=======================================*/
+
 footer{
     background-color: white;
     text-align: center;
